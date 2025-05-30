@@ -1,0 +1,582 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wandy Cruz | Desarrollador Web y Software en República Dominicana</title>
+  <meta name="description" content="Portafolio de Wandy Cruz, desarrollador web y de software apasionado por la tecnología, el diseño moderno y soluciones digitales innovadoras.">
+  <meta name="keywords" content="Wandy Cruz, desarrollador web, software, frontend, backend, portafolio, programación, República Dominicana">
+  <meta name="author" content="Wandy Cruz">
+  <meta name="language" content="es">
+
+  <meta property="og:title" content="Wandy Cruz | Desarrollador Web y Software" />
+  <meta property="og:description" content="Explora mi portafolio y descubre mis proyectos de desarrollo web y software." />
+  <meta property="og:image" content="https://tusitio.com/preview.jpg" />
+  <meta property="og:url" content="https://tusitio.com" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wandy Cruz | Desarrollador Web y Software" />
+  <meta name="twitter:description" content="Explora mi portafolio, proyectos, y servicios digitales." />
+  <meta name="twitter:image" content="https://tusitio.com/preview.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://tusitio.com" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="overflow-hidden text-primary">
+
+  <!-- Fondo espacial minimalista -->
+  <canvas id="space-canvas" class="fixed inset-0 w-full h-full"></canvas>
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-black">
+    <h1 class="text-5xl font-bold opacity-0 fade-in-from-left">Wandy Cruz</h1>
+</div>
+
+<div id="main-content" class="hidden h-screen flex flex-col items-center justify-center text-center">
+
+  <!-- Elementos flotantes decorativos -->
+  <div class="floating-element w-20 h-20 top-20 left-20" style="animation-delay: 0s;"></div>
+  <div class="floating-element w-12 h-12 top-40 right-32" style="animation-delay: 2s;"></div>
+  <div class="floating-element w-16 h-16 bottom-32 left-40" style="animation-delay: 4s;"></div>
+
+  <!-- Header con nombre y navegación -->
+  <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="container mx-auto px-6 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Nombre y título -->
+        <div class="glow-text mb-4 md:mb-0">
+          <h1 class="font-bold text-4xl md:text-5xl">Wandy Cruz</h1>
+          <div class="mt-2">
+            <p class="text-lg text-secondary">Frontend & Backend Developer</p>
+            <div class="flex items-center mt-1">
+              <div class="status-dot mr-2"></div>
+              <span class="text-xs text-tertiary">Disponible para proyectos</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navegación -->
+        <ul class="flex flex-wrap gap-2 md:gap-4">
+          <li><a href="#" class="nav-link text-sm" data-section="inicio">Inicio</a></li>
+          <li><a href="#" class="nav-link text-sm" data-section="sobre-mi">Sobre Mí</a></li>
+          <li><a href="#" class="nav-link text-sm" data-section="proyectos">Proyectos</a></li>
+          <li><a href="#" class="nav-link text-sm" data-section="habilidades">Habilidades</a></li>
+          <li><a href="#" class="nav-link text-sm" data-section="experiencia">Experiencia</a></li>
+          <li><a href="#" class="nav-link text-sm" data-section="contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <div id="content-inicio" class="section-container active">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center mb-6">
+        <div class="w-3 h-3 bg-accent rounded-full mr-3 animate-pulse"></div>
+        <h2 class="text-xl font-light tracking-wide uppercase text-white">Bienvenido a mi universo</h2>
+      </div>
+      
+      <div class="space-y-4">
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Este es mi espacio creativo donde confluyen el <span class="text-accent font-medium">minimalismo</span>, 
+          el <span class="text-accent font-medium">código limpio</span> y la visión espacial. 
+          Cada proyecto es una exploración de posibilidades digitales.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-4 my-6">
+          <div class="text-center p-3 bg-white/5 rounded-lg border border-white/10">
+            <div class="text-2xl font-bold text-accent">2+</div>
+            <div class="text-xs text-gray-400">Años de experiencia</div>
+          </div>
+          <div class="text-center p-3 bg-white/5 rounded-lg border border-white/10">
+            <div class="text-2xl font-bold text-accent">9+</div>
+            <div class="text-xs text-gray-400">Proyectos completados</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 text-xs leading-relaxed">
+          Navega a través de las secciones para descubrir mi trabajo, habilidades y pasión por crear 
+          experiencias digitales excepcionales que impactan positivamente a los usuarios.
+        </p>
+        
+        <div class="flex gap-2 mt-4">
+          <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+          <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+          <span class="tech-badge"><i class="fas fa-database"></i> SQL</span>
+        </div>
+      </div>
+      
+      <div class="absolute top-0 left-0 w-12 h-1 bg-accent rounded-full -translate-y-1 translate-x-4"></div>
+    </div>
+  </div>
+
+  <!-- SOBRE MÍ -->
+  <div id="content-sobre-mi" class="section-container">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center mb-6">
+        <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+        <h2 class="text-lg font-light uppercase text-white">Sobre Mí</h2>
+      </div>
+      
+      <div class="space-y-6">
+        <div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Soy un desarrollador full-stack apasionado por la <span class="text-accent font-medium">simplicidad</span>, 
+            el <span class="text-accent font-medium">orden</span> y el <span class="text-accent font-medium">impacto</span>. 
+            Me dedico a construir soluciones digitales limpias, funcionales y centradas en la experiencia de usuario.
+          </p>
+          
+          <p class="text-gray-400 text-xs leading-relaxed mb-4">
+            Mi filosofía se basa en que el mejor código no es el más complejo, sino el más elegante y eficiente. 
+            Cada línea tiene un propósito, cada decisión está pensada para crear valor real.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-r from-accent/10 to-transparent p-4 rounded-lg border-l-4 border-accent">
+          <h3 class="text-accent font-medium text-sm mb-2">Mi Enfoque</h3>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Código limpio y mantenible</li>
+            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> UX centrada en el usuario</li>
+            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Rendimiento optimizado</li>
+            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Diseño responsive</li>
+          </ul>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="p-3 bg-white/5 rounded-lg">
+            <i class="fas fa-code text-accent text-lg mb-2"></i>
+            <div class="text-xs text-gray-300">Clean Code</div>
+          </div>
+          <div class="p-3 bg-white/5 rounded-lg">
+            <i class="fas fa-paint-brush text-accent text-lg mb-2"></i>
+            <div class="text-xs text-gray-300">UI/UX Design</div>
+          </div>
+          <div class="p-3 bg-white/5 rounded-lg">
+            <i class="fas fa-rocket text-accent text-lg mb-2"></i>
+            <div class="text-xs text-gray-300">Performance</div>
+          </div>
+        </div>
+        
+        <div class="text-sm text-accent font-medium text-center">
+          +2 años escribiendo código con propósito
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROYECTOS -->
+  <div id="content-proyectos" class="section-container">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+          <h2 class="text-lg font-light uppercase text-white">Proyectos Destacados</h2>
+        </div>
+        <div class="text-xs text-tertiary">Featured Work</div>
+      </div>
+      
+      <div class="space-y-4">
+        <div class="project-item">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-accent font-medium flex items-center">
+              <i class="fas fa-globe mr-2"></i>
+              Portafolio Personal
+            </h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2024</span>
+          </div>
+          <p class="text-xs text-gray-400 mb-3">
+            UI/UX enfocado en branding personal con animaciones Three.js y experiencia inmersiva. 
+            Diseño minimalista con efectos visuales avanzados.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 flex-wrap">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge"><i class="fas fa-cube"></i> Three.js</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="#" class="text-accent hover:text-white transition"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="text-accent hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-accent font-medium flex items-center">
+              <i class="fas fa-cash-register mr-2"></i>
+              Sistema POS Avanzado
+            </h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2024</span>
+          </div>
+          <p class="text-xs text-gray-400 mb-3">
+            Sistema completo de punto de venta con gestión de inventario, reportes analytics, 
+            dashboard en tiempo real y arquitectura escalable.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 flex-wrap">
+              <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+              <span class="tech-badge">Express</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="#" class="text-accent hover:text-white transition"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="text-accent hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-accent font-medium flex items-center">
+              <i class="fas fa-university mr-2"></i>
+              Web Politécnico
+            </h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2023</span>
+          </div>
+          <p class="text-xs text-gray-400 mb-3">
+            Proyecto colaborativo institucional con focus en accesibilidad web, 
+            SEO optimizado y sistema de gestión de contenidos dinámico.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 flex-wrap">
+              <span class="tech-badge"><i class="fab fa-vuejs"></i> Vue.js</span>
+              <span class="tech-badge"><i class="fas fa-fire"></i> Firebase</span>
+              <span class="tech-badge">PWA</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="#" class="text-accent hover:text-white transition"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="text-accent hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-accent font-medium flex items-center">
+              <i class="fas fa-mobile-alt mr-2"></i>
+              E-commerce Mobile
+            </h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2023</span>
+          </div>
+          <p class="text-xs text-gray-400 mb-3">
+            Aplicación de comercio electrónico responsive con carrito de compras, 
+            pagos integrados y panel administrativo completo.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex gap-2 flex-wrap">
+              <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="tech-badge">API REST</span>
+              <span class="tech-badge">Stripe</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="#" class="text-accent hover:text-white transition"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="text-accent hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6 p-4 bg-gradient-to-r from-accent/10 to-transparent rounded-lg border-l-4 border-accent">
+        <p class="text-xs text-accent font-medium">
+          <i class="fas fa-lightbulb mr-2"></i>
+          Cada línea de código con intención y propósito hacia la excelencia.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HABILIDADES -->
+  <div id="content-habilidades" class="section-container">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+          <h2 class="text-lg font-light uppercase text-white">Stack Tecnológico</h2>
+        </div>
+        <div class="text-xs text-tertiary">Tech Skills</div>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="skill-category">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center">
+              <i class="fas fa-laptop-code text-accent mr-2"></i>
+              <span class="text-gray-300 font-medium">Frontend Development</span>
+            </div>
+            <span class="text-xs text-accent font-bold">90%</span>
+          </div>
+          <div class="skill-level w-[90%] mb-3"></div>
+          <div class="flex gap-2 flex-wrap">
+            <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript ES6+</span>
+            <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+            <span class="tech-badge"><i class="fab fa-vuejs"></i> Vue.js</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center">
+              <i class="fas fa-paint-brush text-accent mr-2"></i>
+              <span class="text-gray-300 font-medium">Styling & Design</span>
+            </div>
+            <span class="text-xs text-accent font-bold">85%</span>
+          </div>
+          <div class="skill-level w-[85%] mb-3"></div>
+          <div class="flex gap-2 flex-wrap">
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+            <span class="tech-badge"><i class="fab fa-sass"></i> SASS</span>
+            <span class="tech-badge">CSS Grid</span>
+            <span class="tech-badge">Flexbox</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center">
+              <i class="fas fa-server text-accent mr-2"></i>
+              <span class="text-gray-300 font-medium">Backend Development</span>
+            </div>
+            <span class="text-xs text-accent font-bold">75%</span>
+          </div>
+          <div class="skill-level w-[75%] mb-3"></div>
+          <div class="flex gap-2 flex-wrap">
+            <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="tech-badge">Express.js</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+            <span class="tech-badge"><i class="fas fa-fire"></i> Firebase</span>
+            <span class="tech-badge">API REST</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center">
+              <i class="fas fa-tools text-accent mr-2"></i>
+              <span class="text-gray-300 font-medium">Herramientas & DevOps</span>
+            </div>
+            <span class="text-xs text-accent font-bold">80%</span>
+          </div>
+          <div class="skill-level w-[80%] mb-3"></div>
+          <div class="flex gap-2 flex-wrap">
+            <span class="tech-badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="tech-badge">Webpack</span>
+            <span class="tech-badge">Vite</span>
+            <span class="tech-badge"><i class="fab fa-figma"></i> Figma</span>
+            <span class="tech-badge">VS Code</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6 grid grid-cols-2 gap-4">
+        <div class="text-center p-3 bg-white/5 rounded-lg border border-accent/20">
+          <div class="text-lg font-bold text-accent">15+</div>
+          <div class="text-xs text-gray-400">Tecnologías dominadas</div>
+        </div>
+        <div class="text-center p-3 bg-white/5 rounded-lg border border-accent/20">
+          <div class="text-lg font-bold text-accent">100%</div>
+          <div class="text-xs text-gray-400">Código responsivo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCIA -->
+  <div id="content-experiencia" class="section-container">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+          <h2 class="text-lg font-light uppercase text-white">Trayectoria Profesional</h2>
+        </div>
+        <div class="text-xs text-tertiary">Experience</div>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="timeline-item current">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-accent font-medium">Desarrollador Full-Stack</h3>
+            <span class="text-xs text-tertiary bg-accent/20 px-2 py-1 rounded">2022 - Presente</span>
+          </div>
+          <div class="text-xs text-gray-300 mb-2 font-medium">Freelance & Proyectos Propios</div>
+          <p class="text-xs text-gray-400 mb-3 leading-relaxed">
+            Desarrollo de aplicaciones web completas y sistemas de gestión empresarial. 
+            Especialización en interfaces modernas, arquitecturas escalables y experiencias de usuario excepcionales.
+          </p>
+          <div class="bg-white/5 p-3 rounded-lg mt-3">
+            <div class="text-xs text-gray-300 mb-2">Logros principales:</div>
+            <ul class="space-y-1 text-xs text-gray-400">
+              <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> +15 proyectos web completados</li>
+              <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> Interfaces 100% responsive</li>
+              <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> Optimización de rendimiento 40%+</li>
+              <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> Arquitecturas escalables</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-gray-300 font-medium">Desarrollador Frontend</h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2021 - 2022</span>
+          </div>
+          <div class="text-xs text-gray-300 mb-2 font-medium">Freelance UI/UX & Web Development</div>
+          <p class="text-xs text-gray-400 mb-3 leading-relaxed">
+            Diseño y desarrollo de interfaces de usuario para startups locales y pequeñas empresas. 
+            Enfoque en diseño minimalista, accesibilidad web y optimización para dispositivos móviles.
+          </p>
+          <div class="bg-white/5 p-3 rounded-lg mt-3">
+            <div class="text-xs text-gray-300 mb-2">Especialización:</div>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tech-badge">UI/UX Design</span>
+              <span class="tech-badge">Prototipado</span>
+              <span class="tech-badge">Mobile First</span>
+              <span class="tech-badge">Figma</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-gray-300 font-medium">Estudiante Autodidacta</h3>
+            <span class="text-xs text-tertiary bg-white/10 px-2 py-1 rounded">2020 - 2021</span>
+          </div>
+          <div class="text-xs text-gray-300 mb-2 font-medium">Formación Intensiva en Desarrollo Web</div>
+          <p class="text-xs text-gray-400 mb-3 leading-relaxed">
+            Período de aprendizaje intensivo en tecnologías web modernas. Enfoque en fundamentos sólidos, 
+            mejores prácticas y construcción de proyectos personales para consolidar conocimientos.
+          </p>
+          <div class="bg-white/5 p-3 rounded-lg mt-3">
+            <div class="text-xs text-gray-300 mb-2">Certificaciones & Cursos:</div>
+            <ul class="space-y-1 text-xs text-gray-400">
+              <li class="flex items-center"><i class="fas fa-certificate text-accent mr-2"></i> JavaScript ES6+ Advanced</li>
+              <li class="flex items-center"><i class="fas fa-certificate text-accent mr-2"></i> React & Node.js Full Stack</li>
+              <li class="flex items-center"><i class="fas fa-certificate text-accent mr-2"></i> Responsive Web Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6 p-4 bg-gradient-to-r from-accent/10 to-transparent rounded-lg border-l-4 border-accent">
+        <p class="text-xs text-accent font-medium">
+          <i class="fas fa-rocket mr-2"></i>
+          Construyendo experiencias digitales con impacto real y crecimiento constante.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <div id="content-contacto" class="section-container">
+    <div class="content-panel p-8 bg-white/5 rounded-tl-3xl">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+          <h2 class="text-lg font-light uppercase text-white">Conectemos</h2>
+        </div>
+        <div class="text-xs text-tertiary">Get in Touch</div>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="text-center p-4 bg-gradient-to-br from-accent/10 to-transparent rounded-xl border border-accent/20">
+          <p class="text-sm text-gray-300 mb-2">
+            ¿Tienes una <span class="text-accent font-medium">idea innovadora</span>, 
+            <span class="text-accent font-medium">proyecto desafiante</span> o simplemente quieres 
+            charlar sobre tecnología?
+          </p>
+          <p class="text-xs text-gray-400">
+            Siempre abierto a nuevas oportunidades y colaboraciones creativas.
+          </p>
+        </div>
+        
+        <div class="space-y-3">
+          <a href="mailto:wandyydev@gmail.com" class="contact-item group">
+            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-colors">
+              <i class="fa-regular fa-envelope text-accent"></i>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm text-gray-200 font-medium">Email Directo</div>
+              <div class="text-xs text-gray-400">wandyydev@gmail.com</div>
+            </div>
+            <i class="fas fa-arrow-right text-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
+          </a>
+          
+          <a href="https://github.com/wandycruz" class="contact-item group">
+            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-colors">
+              <i class="fa-brands fa-github text-accent"></i>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm text-gray-200 font-medium">GitHub Portfolio</div>
+              <div class="text-xs text-gray-400">github.com/wandycruz</div>
+            </div>
+            <i class="fas fa-external-link-alt text-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
+          </a>
+          
+          <a href="https://linkedin.com/in/wandycruz" class="contact-item group">
+            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-colors">
+              <i class="fa-brands fa-linkedin text-accent"></i>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm text-gray-200 font-medium">LinkedIn Profesional</div>
+              <div class="text-xs text-gray-400">linkedin.com/in/wandycruz</div>
+            </div>
+            <i class="fas fa-external-link-alt text-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
+          </a>
+          
+          <a href="https://wa.me/1234567890" class="contact-item group">
+            <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-colors">
+              <i class="fa-brands fa-whatsapp text-accent"></i>
+            </div>
+            <div class="flex-1">
+              <div class="text-sm text-gray-200 font-medium">WhatsApp</div>
+              <div class="text-xs text-gray-400">Respuesta rápida</div>
+            </div>
+            <i class="fas fa-arrow-right text-accent opacity-0 group-hover:opacity-100 transition-opacity"></i>
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="text-center p-3 bg-white/5 rounded-lg border border-accent/20">
+            <i class="fas fa-clock text-accent text-lg mb-2"></i>
+            <div class="text-xs text-gray-300">Respuesta en</div>
+            <div class="text-sm font-bold text-accent">< 24h</div>
+          </div>
+          <div class="text-center p-3 bg-white/5 rounded-lg border border-accent/20">
+            <i class="fas fa-globe text-accent text-lg mb-2"></i>
+            <div class="text-xs text-gray-300">Disponible</div>
+            <div class="text-sm font-bold text-accent">Remoto</div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-r from-green-500/10 to-transparent p-4 rounded-lg border-l-4 border-green-500">
+          <div class="flex items-center">
+            <div class="status-dot mr-3"></div>
+            <div>
+              <p class="text-sm text-green-300 font-medium">Disponible para proyectos</p>
+              <p class="text-xs text-gray-400">Aceptando nuevos desafíos y colaboraciones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+      setTimeout(() => {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('main-content').classList.remove('hidden');
+        }, 2000);
+  </script>
+  <script src="/js/main.js"></script>
+  </script>
+</body>
+</html>
